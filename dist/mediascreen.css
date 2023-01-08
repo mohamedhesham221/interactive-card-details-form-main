@@ -31,11 +31,11 @@
   }
   .top__card .card__back {
     top: unset;
-    bottom: 80px;
+    bottom: 20%;
     right: -170px;
   }
   .top__card .card__front {
-    top: 80px;
+    top: 20%;
     right: -50px;
     left: unset;
   }
