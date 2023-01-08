@@ -1,0 +1,82 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .top__card .card__front {
+    left: 200px;
+  }
+  .top__card .card__back {
+    right: 200px;
+  }
+  .bottom__card {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .card {
+    display: flex;
+    height: 100vh;
+  }
+  .top__card {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center/cover url(images/bg-main-desktop.png);
+  }
+  .top__card .card__front,
+  .top__card .card__back {
+    width: 350px;
+    height: 200px;
+    margin: 0;
+  }
+  .top__card .card__back {
+    top: unset;
+    bottom: 80px;
+    right: -170px;
+  }
+  .top__card .card__front {
+    top: 80px;
+    right: -50px;
+    left: unset;
+  }
+  .card__back p {
+    margin-right: 30px;
+    font-size: 12px;
+  }
+  .card__front__details {
+    justify-content: space-around;
+  }
+  .card__front__details p#card-number {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  p#card-name,
+  p.card__date {
+    font-size: 12px;
+  }
+  .bottom__card {
+    display: grid;
+    place-content: center;
+  }
+  form {
+    width: 300px;
+    margin-right: -170px;
+    transform: scale(1.2);  
+    }
+    button {
+        cursor: pointer;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .top__card {
+        width: 50%;
+    }
+    form {
+        width: 300px;
+        margin-right: -92px;
+        transform: scale(1.5);
+      }
+    
+}
